@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- 모든걸 암기하는게 아니라 시스템이 어떻게 동작되는지 이해하고 적용시켜보는게 중요-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href= "css/styles.css" />
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KokoaTalk</title>
+</head>
+<body>
+    <div class = "status-bar">
+        <div class ="status-bar__column">
+            <span>No Servie</span>
+            <i class="fas fa-wifi"></i> <!--firtst child-->
+        </div>
+       
+        <div class ="status-bar__column">
+            <span>18:43</span>
+        </div>
+
+        <div class ="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-2x"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div> 
+        <header class = "welcome-header">
+            <!--header는 종류가 많을것이므로 class 이름을 지어서 구분해주는것이 좋음-->
+            <h1 class = "welcome-header__title">Welcome to KakaoTalk</h1>
+            <p class="welcome-header__text">If you have a Kakao Account, log in with your emial or phone number.</p>
+        </header>
+
+        <form action="friends.html" method="get" id = "login-form">
+            <!--get이 friends.html로 이동가능케함 , action의 url에는 파일이 반드시 존재해야함-->
+            <input name = "username" type = "text" placeholder = "Email or phone number"/>
+            <input name = "password" type = "password" placeholder = "Password">
+            <input type = "submit" value = "Log In" />
+            <a href = "#"> Find Kakao Account or Password</a>
+        </form>
+           
+
+
+        <div id="no-mobile">
+            Your screen is too big  ㅠㅠ ! 
+          </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+crossorigin="anonymous"></script> <!-- script는 항상 body 마지막에 존재해야함-->
+</body>
+</html>
